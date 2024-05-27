@@ -1,0 +1,16 @@
+datasources:17ba317fcb379efbe14b46f445c80c36ab08df0e
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:ecf0ffca25a6ae3279f2ef69871f56cbdb2f5dbc
+--suite TestCases.Test ChangePassword
+--suite TestCases.Test ForgotPassword
+--suite TestCases.Test LoginInvalid
+--suite TestCases.Test LoginValid
+--suite TestCases.Test Search
+--suite TestCases.Test logout
+--suite TestCases.Test ContactDetails
+--suite TestCases.Test Depedent save
+--suite TestCases.Test EmergencyContact
+--suite TestCases.Test Immigration
+--suite TestCases.Test PersonalDetails
+--suite TestCases.Test dependent cancel

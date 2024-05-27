@@ -1,0 +1,33 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test PersonalDetails :: Test search to dashboard page               
+==============================================================================
+fill the form of personal details                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_PersonalDetails.robot:18
+    T:  fill the form of personal details    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_PersonalDetails.robot:21
+      validate successful saved personal details    FName=Suvetha    MName=Jayagopi    LName=P    Employee_id=1317    Othr_id=1307    LNumber=2002
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_PersonalDetails.robot:23
+      Fill the login form    ${username}    ${password}
+      |  ${username} = Admin (str)
+      |  ${password} = admin123 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\Resources\LoginResources.robot:16
+      Input Text    xpath://input[@name='username']    ${Username}
+      |  ${Username} = Admin (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://input[@name='username']' not found.
+------------------------------------------------------------------------------
+TestCases.Test PersonalDetails :: Test search to dashboard page       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml

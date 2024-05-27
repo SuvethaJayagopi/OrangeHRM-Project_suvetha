@@ -1,0 +1,27 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Immigration :: to validate login form                          
+==============================================================================
+Fill dependent                                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
+    T:  Fill dependent    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
+      validate successful saved Dependent    ${Number}    ${Status}    ${Comment}
+      |  ${Number} = xpath:(//input[@class="oxd-input oxd-input--active"])[2] (str)
+      |  ${Status} = <Unable to define variable value>
+      |  ${Comment} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${Status}' not found.
+------------------------------------------------------------------------------
+TestCases.Test Immigration :: to validate login form                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\9\output.xml

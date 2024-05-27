@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-26T09:17:10.891662" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test PersonalDetails" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_PersonalDetails.robot">
+<test id="s1-s1-t1" name="fill the form of personal details" line="18">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:15.388227" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-26T09:17:15.388227" elapsed="29.278618"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:44.852134" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-26T09:17:44.844107" elapsed="4.506382"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-26T09:17:49.352077" elapsed="12.639417"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-26T09:18:02.021950" elapsed="0.473606"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:17:15.366849" elapsed="47.138699"/>
+</kw>
+<kw name="validate successful saved personal details">
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:18:02.766930" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<msg time="2024-05-26T09:18:08.167736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-26T09:18:08.181458" level="FAIL">Element with locator 'xpath://input[@name='username']' not found.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-26T09:18:02.658580" elapsed="5.559273">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-26T09:18:08.228545" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-26T09:18:08.228545" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-26T09:18:02.648745" elapsed="5.579800">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-26T09:18:08.228545" elapsed="0.005089"/>
+</kw>
+<kw name="verify the valid credentials" owner="LoginResources">
+<status status="NOT RUN" start="2024-05-26T09:18:08.234316" elapsed="0.000000"/>
+</kw>
+<kw name="click myInfo Button" owner="MyInfoResource">
+<status status="NOT RUN" start="2024-05-26T09:18:08.234316" elapsed="0.000000"/>
+</kw>
+<kw name="click personal details element" owner="MyInfoResource">
+<status status="NOT RUN" start="2024-05-26T09:18:08.234316" elapsed="0.000000"/>
+</kw>
+<kw name="clear the element" owner="PersonalDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:18:08.234316" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the details" owner="PersonalDetailsResources">
+<arg>${FName}</arg>
+<arg>${MName}</arg>
+<arg>${LName}</arg>
+<arg>${Employee_id}</arg>
+<arg>${Othr_id}</arg>
+<arg>${LNumber}</arg>
+<status status="NOT RUN" start="2024-05-26T09:18:08.234316" elapsed="0.000000"/>
+</kw>
+<kw name="select marital status" owner="PersonalDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:18:08.242658" elapsed="0.000534"/>
+</kw>
+<kw name="Click Gender As Female" owner="PersonalDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:18:08.243192" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-26T09:18:08.243192" elapsed="0.000000"/>
+</kw>
+<kw name="Click Save Button" owner="PersonalDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:18:08.243192" elapsed="0.000000"/>
+</kw>
+<arg>FName=Suvetha</arg>
+<arg>MName=Jayagopi</arg>
+<arg>LName=P</arg>
+<arg>Employee_id=1317</arg>
+<arg>Othr_id=1307</arg>
+<arg>LNumber=2002</arg>
+<status status="FAIL" start="2024-05-26T09:18:02.561799" elapsed="5.681393">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-26T09:18:08.251256" elapsed="2.386027"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:18:08.251256" elapsed="2.388553"/>
+</kw>
+<status status="FAIL" start="2024-05-26T09:17:15.340968" elapsed="55.298841">Element with locator 'xpath://input[@name='username']' not found.</status>
+</test>
+<doc>Test search to dashboard page</doc>
+<status status="FAIL" start="2024-05-26T09:17:10.977420" elapsed="59.685469"/>
+</suite>
+<status status="FAIL" start="2024-05-26T09:17:10.921783" elapsed="59.763592"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test PersonalDetails">TestCases.Test PersonalDetails</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

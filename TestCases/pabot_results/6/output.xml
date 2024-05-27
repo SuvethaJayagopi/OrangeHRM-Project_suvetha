@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-26T09:17:10.620738" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test ContactDetails" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ContactDetails.robot">
+<test id="s1-s1-t1" name="fill contact details" line="18">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:15.435339" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-26T09:17:15.424786" elapsed="27.956976"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:44.210171" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-26T09:17:43.553946" elapsed="6.491053"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-26T09:17:50.047068" elapsed="0.740784"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-26T09:17:50.795106" elapsed="0.041688"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:17:15.394730" elapsed="35.458665"/>
+</kw>
+<kw name="validate successful saved contact details">
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:52.302384" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<msg time="2024-05-26T09:17:58.401961" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-26T09:17:58.428612" level="FAIL">Element with locator 'xpath://input[@name='username']' not found.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-26T09:17:51.204696" elapsed="7.590784">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-26T09:17:58.801508" elapsed="0.001094"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-26T09:17:58.812531" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-26T09:17:51.196316" elapsed="7.623872">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-26T09:17:58.821714" elapsed="0.000560"/>
+</kw>
+<kw name="verify the valid credentials" owner="LoginResources">
+<status status="NOT RUN" start="2024-05-26T09:17:58.822274" elapsed="0.000000"/>
+</kw>
+<kw name="click myInfo Button" owner="MyInfoResource">
+<status status="NOT RUN" start="2024-05-26T09:17:58.826301" elapsed="0.000000"/>
+</kw>
+<kw name="click contact details element" owner="MyInfoResource">
+<status status="NOT RUN" start="2024-05-26T09:17:58.826301" elapsed="0.003054"/>
+</kw>
+<kw name="Fill the details" owner="ContactDetailsResources">
+<arg>${Srts1}</arg>
+<arg>${Srts2}</arg>
+<arg>${City}</arg>
+<arg>${States}</arg>
+<arg>${Zip_codes}</arg>
+<arg>${Homes}</arg>
+<arg>${Mobiles}</arg>
+<arg>${Works}</arg>
+<arg>${Work_emails}</arg>
+<arg>${Other_emails}</arg>
+<status status="NOT RUN" start="2024-05-26T09:17:58.829355" elapsed="0.000000"/>
+</kw>
+<kw name="select country" owner="ContactDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:17:58.829355" elapsed="0.000000"/>
+</kw>
+<kw name="Click Save Button" owner="ContactDetailsResources">
+<status status="NOT RUN" start="2024-05-26T09:17:58.834382" elapsed="0.000866"/>
+</kw>
+<arg>Srts1=Gandhi</arg>
+<arg>Srts2=Nehru</arg>
+<arg>City=Salem</arg>
+<arg>States=Tamilnadu</arg>
+<arg>Zip_codes=636306</arg>
+<arg>Homes=25085</arg>
+<arg>Mobiles=7339446896</arg>
+<arg>Works=123456789</arg>
+<arg>Work_emails=moon@gmail.com</arg>
+<arg>Other_emails=good@gmail.com</arg>
+<status status="FAIL" start="2024-05-26T09:17:51.057709" elapsed="7.787503">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-26T09:17:58.856921" elapsed="4.308258"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:17:58.853890" elapsed="4.312798"/>
+</kw>
+<status status="FAIL" start="2024-05-26T09:17:15.366849" elapsed="47.800349">Element with locator 'xpath://input[@name='username']' not found.</status>
+</test>
+<doc>Test search to dashboard page</doc>
+<status status="FAIL" start="2024-05-26T09:17:10.710268" elapsed="52.487398"/>
+</suite>
+<status status="FAIL" start="2024-05-26T09:17:10.669121" elapsed="52.645270"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test ContactDetails">TestCases.Test ContactDetails</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-26T09:17:10.720313" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test Immigration" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot">
+<test id="s1-s1-t1" name="Fill dependent" line="18">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:11.577563" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-26T09:17:11.577563" elapsed="11.564963"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-26T09:17:23.164471" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-26T09:17:23.158887" elapsed="14.345821"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-26T09:17:37.504708" elapsed="0.878882"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-26T09:17:38.391500" elapsed="0.015943"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:17:11.567528" elapsed="26.839915"/>
+</kw>
+<kw name="validate successful saved Dependent">
+<msg time="2024-05-26T09:17:38.451293" level="FAIL">Variable '${Status}' not found.</msg>
+<arg>${Number}</arg>
+<arg>${Status}</arg>
+<arg>${Comment}</arg>
+<status status="FAIL" start="2024-05-26T09:17:38.414943" elapsed="0.036350">Variable '${Status}' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-26T09:17:38.739179" elapsed="9.553349"/>
+</kw>
+<status status="PASS" start="2024-05-26T09:17:38.703471" elapsed="9.599326"/>
+</kw>
+<status status="FAIL" start="2024-05-26T09:17:11.567528" elapsed="36.736750">Variable '${Status}' not found.</status>
+</test>
+<doc>to validate login form</doc>
+<status status="FAIL" start="2024-05-26T09:17:10.790604" elapsed="37.615853"/>
+</suite>
+<status status="FAIL" start="2024-05-26T09:17:10.754141" elapsed="37.669084"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Immigration">TestCases.Test Immigration</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-26T09:17:11.556201" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot", line 0</msg>
+<msg time="2024-05-26T09:17:11.562006" level="ERROR">In source file:
+  File "../TestData/Immigration.csv", line 3</msg>
+<msg time="2024-05-26T09:17:11.567528" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: IndexError: list index out of range</msg>
+</errors>
+</robot>
