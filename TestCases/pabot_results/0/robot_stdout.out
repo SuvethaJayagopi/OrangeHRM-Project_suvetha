@@ -1,7 +1,7 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test ChangePassword :: test search to dashboard page                
+TestCases.Test ChangePassword :: change password to dashboard page            
 ==============================================================================
 validate successful change password                                   | PASS |
 ------------------------------------------------------------------------------
@@ -9,10 +9,10 @@ Verify invalid current password                                       | PASS |
 ------------------------------------------------------------------------------
 Verify invalid confirm password                                       | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test ChangePassword :: test search to dashboard page        | PASS |
+TestCases.Test ChangePassword :: change password to dashboard page    | PASS |
 3 tests, 3 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
 3 tests, 3 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml

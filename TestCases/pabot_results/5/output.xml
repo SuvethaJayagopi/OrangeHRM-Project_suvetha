@@ -1,94 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-26T09:17:10.482858" rpa="false" schemaversion="5">
-<suite id="s1" name="TestCases" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases">
-<suite id="s1-s1" name="Test logout" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_logout.robot">
-<test id="s1-s1-t1" name="validate successful change password" line="15">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T14:32:44.324289" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test logout" source="C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\Test_logout.robot">
+<test id="s1-s1-t1" name="validate successful change password" line="17">
 <kw name="Open the browser with url" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2024-05-26T09:17:11.273481" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2024-05-28T14:32:44.709746" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2024-05-26T09:17:11.273481" elapsed="12.115367"/>
+<status status="PASS" start="2024-05-28T14:32:44.709746" elapsed="10.264575"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-05-26T09:17:23.389497" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<msg time="2024-05-28T14:32:55.245742" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-05-26T09:17:23.389497" elapsed="18.849680"/>
+<status status="PASS" start="2024-05-28T14:32:54.982246" elapsed="16.173443"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-26T09:17:42.239177" elapsed="0.619625"/>
+<status status="PASS" start="2024-05-28T14:33:11.155689" elapsed="1.251956"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-26T09:17:42.860403" elapsed="0.007712"/>
+<status status="PASS" start="2024-05-28T14:33:12.407645" elapsed="0.060809"/>
 </kw>
-<status status="PASS" start="2024-05-26T09:17:11.273481" elapsed="31.595447"/>
+<status status="PASS" start="2024-05-28T14:32:44.709746" elapsed="27.758708"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${should_fail}</arg>
+<arg>Fail</arg>
+<arg>Intentional fail.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-28T14:33:12.469428" elapsed="0.001785"/>
 </kw>
 <kw name="Fill the login form" owner="LoginResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-26T09:17:42.897629" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
-<msg time="2024-05-26T09:17:51.133419" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-05-26T09:17:51.141981" level="FAIL">Element with locator 'xpath://input[@name='username']' not found.</msg>
+<msg time="2024-05-28T14:33:12.474082" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
 <arg>xpath://input[@name='username']</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2024-05-26T09:17:42.884252" elapsed="8.451848">Element with locator 'xpath://input[@name='username']' not found.</status>
+<status status="PASS" start="2024-05-28T14:33:12.474082" elapsed="2.908696"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T14:33:15.385356" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-28T14:33:15.771035" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>xpath://input[@type='password']</arg>
 <arg>${Password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-26T09:17:51.342466" elapsed="0.001017"/>
+<status status="PASS" start="2024-05-28T14:33:15.383838" elapsed="8.555897"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T14:33:23.949019" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
 <arg>xpath://button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-26T09:17:51.344043" elapsed="0.000513"/>
+<status status="PASS" start="2024-05-28T14:33:23.944439" elapsed="3.935839"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="FAIL" start="2024-05-26T09:17:42.871235" elapsed="8.473321">Element with locator 'xpath://input[@name='username']' not found.</status>
+<status status="PASS" start="2024-05-28T14:33:12.471213" elapsed="15.409065"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" start="2024-05-26T09:17:51.344556" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-28T14:33:27.880278" elapsed="0.024768"/>
 </kw>
 <kw name="verify the valid credentials" owner="LoginResources">
-<status status="NOT RUN" start="2024-05-26T09:17:51.348017" elapsed="0.000910"/>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T14:33:27.913129" level="INFO">Verifying element 'xpath://h6[text()="Dashboard"]' contains exact text 'Dashboard'.</msg>
+<arg>${dashBoard}</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T14:33:27.913129" elapsed="6.294482"/>
+</kw>
+<status status="PASS" start="2024-05-28T14:33:27.905046" elapsed="6.302565"/>
 </kw>
 <kw name="click user icon" owner="ChangePasswordResources">
-<status status="NOT RUN" start="2024-05-26T09:17:51.348927" elapsed="0.000000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T14:33:34.269431" level="INFO">Clicking element 'xpath://p[@class="oxd-userdropdown-name"]'.</msg>
+<arg>${user}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T14:33:34.224874" elapsed="1.109154"/>
+</kw>
+<status status="PASS" start="2024-05-28T14:33:34.207611" elapsed="1.135090"/>
 </kw>
 <kw name="click logout" owner="ChangePasswordResources">
-<status status="NOT RUN" start="2024-05-26T09:17:51.352450" elapsed="0.000000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T14:33:35.360129" level="INFO">Clicking element 'xpath:(//a[@class="oxd-userdropdown-link"])[4]'.</msg>
+<arg>${logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T14:33:35.353858" elapsed="3.419451"/>
+</kw>
+<status status="PASS" start="2024-05-28T14:33:35.342701" elapsed="3.434711"/>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-26T09:17:51.367138" elapsed="11.792100"/>
+<status status="PASS" start="2024-05-28T14:33:38.783875" elapsed="15.703823"/>
 </kw>
-<status status="PASS" start="2024-05-26T09:17:51.358529" elapsed="11.800709"/>
+<status status="PASS" start="2024-05-28T14:33:38.783875" elapsed="15.703823"/>
 </kw>
-<status status="FAIL" start="2024-05-26T09:17:11.273481" elapsed="51.886630">Element with locator 'xpath://input[@name='username']' not found.</status>
+<doc>Intentionally fail and then pass on rerun.</doc>
+<tag>UAT</tag>
+<status status="PASS" start="2024-05-28T14:32:44.706719" elapsed="69.786922"/>
 </test>
 <doc>test valid logout page</doc>
-<status status="FAIL" start="2024-05-26T09:17:10.597854" elapsed="52.574233"/>
+<status status="PASS" start="2024-05-28T14:32:44.364530" elapsed="70.140936"/>
 </suite>
-<status status="FAIL" start="2024-05-26T09:17:10.518245" elapsed="52.663068"/>
+<status status="PASS" start="2024-05-28T14:32:44.344381" elapsed="70.161085"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">UAT</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test logout">TestCases.Test logout</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test logout">TestCases.Test logout</stat>
 </suite>
 </statistics>
 <errors>

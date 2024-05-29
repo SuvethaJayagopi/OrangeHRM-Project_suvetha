@@ -3,28 +3,12 @@ TestCases
 ==============================================================================
 TestCases.Test logout :: test valid logout page                               
 ==============================================================================
-validate successful change password                                     
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_logout.robot:15
-    T:  validate successful change password    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_logout.robot:16
-      Fill the login form    ${username}    ${password}
-      |  ${username} = Admin (str)
-      |  ${password} = admin123 (str)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\Resources\LoginResources.robot:16
-      Input Text    xpath://input[@name='username']    ${Username}
-      |  ${Username} = Admin (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath://input[@name='username']' not found.
+validate successful change password :: Intentionally fail and then... | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test logout :: test valid logout page                       | FAIL |
-1 test, 0 passed, 1 failed
+TestCases.Test logout :: test valid logout page                       | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-TestCases                                                             | FAIL |
-1 test, 0 passed, 1 failed
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\5\output.xml
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\pabot_results\5\output.xml

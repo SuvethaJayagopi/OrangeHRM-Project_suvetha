@@ -12,6 +12,7 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
+#To validate successful change password
 validate successful change password
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5

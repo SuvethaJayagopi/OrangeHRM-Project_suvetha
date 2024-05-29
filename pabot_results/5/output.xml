@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T17:48:57.394092" rpa="false" schemaversion="5">
+<suite id="s1" name="Team2 OrangeHRM" source="C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM">
+<suite id="s1-s1" name="TestCases" source="C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1-s1" name="Test Immigration" source="C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\Test_Immigration.robot">
+<test id="s1-s1-s1-t1" name="Valid" line="18">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:48:58.181092" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T17:48:58.181092" elapsed="8.155047"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:06.336139" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T17:49:06.336139" elapsed="8.295405"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T17:49:14.631544" elapsed="0.642528"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T17:49:15.274895" elapsed="0.012131"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:48:58.170515" elapsed="17.119643"/>
+</kw>
+<kw name="validate successful saved Dependent">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:15.297722" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:15.296467" elapsed="7.633025"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:22.933529" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-28T17:49:24.369511" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:22.933529" elapsed="2.311107"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:25.247242" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:25.246235" elapsed="4.686584"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-28T17:49:15.294464" elapsed="15.167963"/>
+</kw>
+<arg>LoginResources.Fill the login form</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:15.293371" elapsed="15.169056"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T17:49:30.470458" elapsed="0.116594"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="verify the valid credentials" owner="LoginResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:30.598929" level="INFO">Verifying element 'xpath://h6[text()="Dashboard"]' contains exact text 'Dashboard'.</msg>
+<arg>${dashBoard}</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T17:49:30.597277" elapsed="6.165954"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:49:30.594139" elapsed="6.170456"/>
+</kw>
+<arg>LoginResources.verify the valid credentials</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:30.590296" elapsed="6.174299"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="click myInfo Button" owner="MyInfoResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:37.215133" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>${myInfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:37.206266" elapsed="3.744243"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:49:37.192444" elapsed="3.759158"/>
+</kw>
+<arg>MyInfoResource.click myInfo Button</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:37.190917" elapsed="3.760685"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="click immigration element" owner="MyInfoResource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:40.967423" level="INFO">Clicking link 'xpath://a[text()='Immigration']'.</msg>
+<arg>${immigration}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:40.965779" elapsed="2.821509"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:49:40.962194" elapsed="2.825094"/>
+</kw>
+<arg>MyInfoResource.click immigration element</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:40.954607" elapsed="2.832681"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="click add button" owner="ImmigrationResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:43.797646" level="INFO">Clicking button 'xpath:(//button[@type="button"])[3]'.</msg>
+<arg>${add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:43.794858" elapsed="2.014774"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:49:43.790083" elapsed="2.025077"/>
+</kw>
+<arg>ImmigrationResources.click add button</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:43.787288" elapsed="2.027872"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Fill the details" owner="ImmigrationResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:45.831439" level="INFO">Typing text '1317' into text field 'xpath=(//div[@data-v-957b4417]//input[@class='oxd-input oxd-input--active'])[1]'.</msg>
+<arg>${Number}</arg>
+<arg>${num}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:45.831439" elapsed="2.728576"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:49.087874" level="INFO">Typing text 'Yes' into text field 'xpath:(//div[@data-v-957b4417]//input[@class='oxd-input oxd-input--active'])[4]'.</msg>
+<arg>${Eligible}</arg>
+<arg>Yes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:49.077005" elapsed="3.098302"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:52.183844" level="INFO">Typing text 'Good' into text field 'xpath://textarea[@data-v-bd337f32]'.</msg>
+<arg>${Text}</arg>
+<arg>Good</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:52.179950" elapsed="4.271238"/>
+</kw>
+<arg>${Num}</arg>
+<status status="PASS" start="2024-05-28T17:49:45.826923" elapsed="11.399504"/>
+</kw>
+<arg>ImmigrationResources.Fill the details</arg>
+<arg>${Num}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:45.815160" elapsed="11.411267"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="select country" owner="ImmigrationResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:57.236154" level="INFO">Clicking element 'xpath://div[@data-v-67d2aedf]'.</msg>
+<arg>${select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:57.231013" elapsed="1.718257"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${select}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T17:49:58.954304" elapsed="0.344658"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${select}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T17:49:59.298962" elapsed="0.358694"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:49:59.663215" level="INFO">Clicking element 'xpath://span[text()='Albania']'.</msg>
+<arg>${country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:49:59.663215" elapsed="1.077671"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:49:57.226427" elapsed="3.517988"/>
+</kw>
+<arg>ImmigrationResources.select country</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:49:57.226427" elapsed="3.517988"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Save Button" owner="ImmigrationResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:50:00.759495" level="INFO">Clicking button 'xpath:(//button[text()=" Save "])[1]'.</msg>
+<arg>${save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:50:00.752442" elapsed="1.074451"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${success_save}</arg>
+<arg>Successfully Updated</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-28T17:50:01.834919" elapsed="0.007044"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:50:00.744415" elapsed="1.098593"/>
+</kw>
+<arg>ImmigrationResources.Click Save Button</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-05-28T17:50:00.744415" elapsed="1.098593"/>
+</kw>
+<arg>Num=1317</arg>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-05-28T17:49:15.291342" elapsed="46.551666"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T17:50:01.856796" elapsed="13.310901"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:50:01.851035" elapsed="13.316662"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:48:58.150269" elapsed="77.017428"/>
+</test>
+<doc>Test Immigration to my info page</doc>
+<status status="PASS" start="2024-05-28T17:48:57.479431" elapsed="77.701791"/>
+</suite>
+<status status="PASS" start="2024-05-28T17:48:57.472905" elapsed="77.721127"/>
+</suite>
+<status status="PASS" start="2024-05-28T17:48:57.433835" elapsed="77.760197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Team2 OrangeHRM">Team2 OrangeHRM</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCases">Team2 OrangeHRM.TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test Immigration">Team2 OrangeHRM.TestCases.Test Immigration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Test search to dashboard page
+Documentation        Test emergency contact to my info page
 Library              SeleniumLibrary
 Library              DataDriver    file=../TestData/EmergencyContactData.xlsx    sheet_name=emergency
 Resource             ../Resources/GenericResources.robot
@@ -19,7 +19,9 @@ ${password}    admin123
 fill the form of personal details    ${NAMES}    ${RELATION}    ${HOMES}    ${MOBILES}    ${WORK}
 
 *** Keywords ***
+#To validate successful saved personal details
 validate successful saved personal details
+    [Tags]    Smoke
     [Arguments]     ${NAMES}    ${RELATION}    ${HOMES}    ${MOBILES}    ${WORK}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5

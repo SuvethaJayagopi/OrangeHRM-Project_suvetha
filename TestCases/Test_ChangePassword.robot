@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        test search to dashboard page
+Documentation        change password to dashboard page
 Library    SeleniumLibrary
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/LoginResources.robot
@@ -17,7 +17,9 @@ ${invalid_password}    admin
 ${invalidconfirm_password}    User456 
 
 *** Test Cases ***
+#To validate succcessful change password
 validate successful change password
+    [Tags]    UAT
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials    
@@ -27,7 +29,9 @@ validate successful change password
     Set Selenium Implicit Wait    3
     ChangePasswordResources.verify successful update message
 
+#To verify invalid current password
 Verify invalid current password 
+    [Tags]    Smoke
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials    
@@ -37,7 +41,9 @@ Verify invalid current password
     Set Selenium Implicit Wait    3
     ChangePasswordResources.Verify error message for incorrect current message
 
+#To verify invalid confirm password
 Verify invalid confirm password
+    [Tags]   Smoke 
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials    

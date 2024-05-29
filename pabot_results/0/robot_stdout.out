@@ -1,0 +1,23 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test ChangePassword :: change password to dashboa...
+==============================================================================
+validate successful change password                                   | PASS |
+------------------------------------------------------------------------------
+Verify invalid current password                                       | PASS |
+------------------------------------------------------------------------------
+Verify invalid confirm password                                       | PASS |
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test ChangePassword :: change password t... | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM                                                       | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\pabot_results\0\output.xml

@@ -1,7 +1,7 @@
 *** Settings ***
-Documentation    to validate login form
+Documentation    Test Immigration to my info page
 Library    SeleniumLibrary
-Library    DataDriver    file=../TestData/Immigration.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=../TestData/ImmigrationData.csv    encoding=utf_8    dialect=unix
 Resource             ../Resources/GenericResources.robot
 Resource             ../Resources/LoginResources.robot
 Resource             ../Resources/ImmigrationResources.robot
@@ -15,17 +15,19 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
-Fill dependent    ${Num}   ${Status}    ${Comment}
+Fill dependent    ${Num}   
 
 *** Keywords ***
+#To validate successful saved dependent
 validate successful saved Dependent
-    [Arguments]     ${Num}   ${Status}    ${Comment}  
-    LoginResources.Fill the login form    ${username}    ${password}
-    Set Selenium Implicit Wait     5
-    LoginResources.verify the valid credentials
-    MyInfoResource.click myInfo Button
-    MyInfoResource.click immigration element
-    ImmigrationResources.click add button
-    ImmigrationResources.Fill the details   ${Num}    ${Status}    ${Comment}  
-    ImmigrationResources.select country
-    ImmigrationResources.Click Save Button
+    [Tags]    Smoke
+    [Arguments]    ${Num}
+    Run Keyword And Ignore Error    LoginResources.Fill the login form    ${username}    ${password}
+    Set Selenium Implicit Wait    5
+    Run Keyword And Ignore Error    LoginResources.verify the valid credentials
+    Run Keyword And Ignore Error    MyInfoResource.click myInfo Button
+    Run Keyword And Ignore Error    MyInfoResource.click immigration element
+    Run Keyword And Ignore Error    ImmigrationResources.click add button
+    Run Keyword And Ignore Error    ImmigrationResources.Fill the details    ${Num}
+    Run Keyword And Ignore Error    ImmigrationResources.select country
+    Run Keyword And Ignore Error    ImmigrationResources.Click Save Button

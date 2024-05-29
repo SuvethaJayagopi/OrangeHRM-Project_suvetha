@@ -1,0 +1,17 @@
+datasources:24a81a4dd698a9c1d82c1f3aa2c7af536c033820
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:cea6440eddd9bdec04009cb430945b09c9a28956
+--suite Team2 OrangeHRM.TestCases.Test ChangePassword
+--suite Team2 OrangeHRM.TestCases.Test ContactDetails
+--suite Team2 OrangeHRM.TestCases.Test Depedent save
+--suite Team2 OrangeHRM.TestCases.Test EmergencyContact
+--suite Team2 OrangeHRM.TestCases.Test ForgotPassword
+--suite Team2 OrangeHRM.TestCases.Test Immigration
+--suite Team2 OrangeHRM.TestCases.Test LoginValid
+--suite Team2 OrangeHRM.TestCases.Test PersonalDetails
+--suite Team2 OrangeHRM.TestCases.Test Search
+--suite Team2 OrangeHRM.TestCases.Test dependent cancel
+--suite Team2 OrangeHRM.TestCases.Test Emergency
+--suite Team2 OrangeHRM.TestCases.Test EmergencyDetails delete
+--suite Team2 OrangeHRM.TestCases.Test LoginInvalid

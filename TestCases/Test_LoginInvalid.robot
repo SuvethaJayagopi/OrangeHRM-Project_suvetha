@@ -14,11 +14,13 @@ Login to form using    ${username}    ${password}
  
 
 *** Keywords ***
+#To validate unsuccessful login using invalid username
 validate unsuccessful login using invalid username
     [Arguments]    ${username}    ${password}
     LoginResources.Fill the login form    ${username}    ${password}
     LoginResources.verify the invalid credentials
 
+#To validate unsuccessful login using invalid password
 Validate Unsuccessful login using invalid password
     [Arguments]    ${username}    ${password}
     LoginResources.Fill the login form    ${username}    ${password}

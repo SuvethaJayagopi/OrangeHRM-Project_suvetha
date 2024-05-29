@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Test search to dashboard page
+Documentation        Test contact details to my info
 Library              SeleniumLibrary
 Library              DataDriver    file=../TestData/ContactData.xlsx    sheet_name=contact
 Resource             ../Resources/GenericResources.robot
@@ -18,7 +18,9 @@ ${password}    admin123
 fill contact details    ${Srts1}    ${Srts2}    ${City}    ${States}     ${Zip_codes}    ${Homes}    ${Mobiles}    ${Works}    ${Work_emails}    ${Other_emails}
 
 *** Keywords ***
+#To validate successful saved contact
 validate successful saved contact details
+    [Tags]    Smoke
     [Arguments]    ${Srts1}    ${Srts2}    ${City}    ${States}     ${Zip_codes}    ${Homes}    ${Mobiles}    ${Works}    ${Work_emails}    ${Other_emails}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5

@@ -15,4 +15,4 @@ TestCases.Test LoginInvalid :: test invalid login to login page       | PASS |
 TestCases                                                             | PASS |
 3 tests, 3 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml

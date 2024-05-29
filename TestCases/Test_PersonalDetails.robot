@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Test search to dashboard page
+Documentation        Test personal details to my info page
 Library              SeleniumLibrary
 Library              DataDriver    file=../TestData/PersonalDetailsData.xlsx    sheet_name=PersonalDetails
 Resource             ../Resources/GenericResources.robot
@@ -18,7 +18,9 @@ ${password}    admin123
 fill the form of personal details    ${FName}    ${MName}    ${LName}    ${Employee_id}    ${Othr_id}    ${LNumber}
 
 *** Keywords ***
+#To validate successful saved personald details
 validate successful saved personal details
+    [Tags]    Smoke
     [Arguments]    ${FName}    ${MName}    ${LName}    ${Employee_id}    ${Othr_id}    ${LNumber}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5

@@ -1,7 +1,7 @@
-datasources:17ba317fcb379efbe14b46f445c80c36ab08df0e
+datasources:8bccd8b4678df753fd85a1e983da4d7327613463
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:ecf0ffca25a6ae3279f2ef69871f56cbdb2f5dbc
+file:2e7f67faaf7dfdb81ad744370f474bc4c8542a6e
 --suite TestCases.Test ChangePassword
 --suite TestCases.Test ForgotPassword
 --suite TestCases.Test LoginInvalid
@@ -14,3 +14,5 @@ file:ecf0ffca25a6ae3279f2ef69871f56cbdb2f5dbc
 --suite TestCases.Test Immigration
 --suite TestCases.Test PersonalDetails
 --suite TestCases.Test dependent cancel
+--suite TestCases.Test Emergency
+--suite TestCases.Test EmergencyDetails delete

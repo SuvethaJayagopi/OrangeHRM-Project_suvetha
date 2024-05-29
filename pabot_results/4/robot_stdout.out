@@ -1,0 +1,21 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test ForgotPassword :: Test forgot page to my log...
+==============================================================================
+validate successful reset password                                    | PASS |
+------------------------------------------------------------------------------
+validate successful cancel reset password                             | PASS |
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test ForgotPassword :: Test forgot page ... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM                                                       | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\pabot_results\4\output.xml

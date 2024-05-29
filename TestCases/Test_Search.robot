@@ -15,7 +15,9 @@ ${empty}    xpath://div[@class="oxd-main-menu"]
 
 
 *** Test Cases ***
+#To validate valid search credentials
 validate valid search credentials
+    [Tags]    Smoke
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials

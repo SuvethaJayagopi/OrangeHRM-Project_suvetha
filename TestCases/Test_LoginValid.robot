@@ -11,7 +11,9 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
+#To validate successful login using valid credentails
 validate Successful login using valid credentials
+    [Tags]    UAT
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials

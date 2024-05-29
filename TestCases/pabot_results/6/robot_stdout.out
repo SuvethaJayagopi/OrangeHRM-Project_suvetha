@@ -1,33 +1,14 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test ContactDetails :: Test search to dashboard page                
+TestCases.Test ContactDetails :: Test contact details to my info              
 ==============================================================================
-fill contact details                                                    
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ContactDetails.robot:18
-    T:  fill contact details    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ContactDetails.robot:21
-      validate successful saved contact details    Srts1=Gandhi    Srts2=Nehru    City=Salem    States=Tamilnadu    Zip_codes=636306    Homes=25085    Mobiles=7339446896    Works=123456789    Work_emails=moon@gmail.com    Other_emails=good@gmail.com
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ContactDetails.robot:23
-      Fill the login form    ${username}    ${password}
-      |  ${username} = Admin (str)
-      |  ${password} = admin123 (str)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\Resources\LoginResources.robot:16
-      Input Text    xpath://input[@name='username']    ${Username}
-      |  ${Username} = Admin (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath://input[@name='username']' not found.
+fill contact details                                                  | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test ContactDetails :: Test search to dashboard page        | FAIL |
-1 test, 0 passed, 1 failed
+TestCases.Test ContactDetails :: Test contact details to my info      | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-TestCases                                                             | FAIL |
-1 test, 0 passed, 1 failed
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml
+Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml

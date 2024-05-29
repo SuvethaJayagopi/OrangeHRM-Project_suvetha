@@ -26,6 +26,7 @@ ${desired_date}         2024-05-28
 
 
 *** Keywords ***
+#To fill personal details page
 Fill the details
     [Arguments]    ${fName}    ${mName}    ${lName}    ${employee_id}    ${othr_id}    ${lNumber}
     Input Text    ${firstName}    ${fName}
@@ -35,6 +36,7 @@ Fill the details
     Input Text    ${other_id}    ${othr_id}
     Input Text    ${licenseNumber}    ${lNumber}
 
+#To clear the element
 clear the element
     Clear Element Text    ${firstName}
     Clear Element Text    ${middleName}
@@ -43,22 +45,27 @@ clear the element
     Clear Element Text    ${other_id}
     Clear Element Text    ${licenseNumber}
 
+#To select the marital status
 select marital status
     Click Element    ${drop_down}
     Wait Until Element Is Visible    ${drop_down}   10s
     Wait Until Element Is Enabled    ${drop_down}    10s
     Click Element    ${married}
 
+#To select the date
 Select Date
     [Arguments]    ${date}
     Click Element    xpath://div[text()='${date}']    
 
+#To click Gender as male
 Click Gender As Male
     Click Element    ${male}
 
+#To clcik gender as female
 Click Gender As Female
     Click Element    ${female}
 
+#To clcik save button
 Click Save Button
     Click Button    ${save}
     Should Contain    ${success_save}    Successfully Updated 
